@@ -22,6 +22,7 @@
     <link href="assets/vendor/animsition/animsition.min.css" rel="stylesheet" />
     <link href="assets/vendor/slick/slick.css" rel="stylesheet" />
     <link href="assets/vendor/slick/slick-theme.css" rel="stylesheet" />
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 
     <!-- Main CSS-->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -82,12 +83,13 @@
 
         <section id="intro" class="intro-2" data-parallax="scroll" data-image-src="assets/images/bg.jpg">
 
-            <div class="content">
+            <div class="content" id="mouse-parallax">
                 <div class="container">
                     <h1 class="scroll-reveal">A three day cultural and literary extravaganza</h1>
                     <p class="scroll-reveal">that would strive to unfurl the splendorous talents from all around the country</p>
                     <a href="index.html#events" class="btn btn-home scroll-reveal">Events</a>
                     <a href="register.html" class="btn btn-home scroll-reveal">Register</a>
+                    <a href="index.html#news" class="btn btn-home scroll-reveal">Explore</a>
                 </div>
                 <!-- /.container -->
             </div>
@@ -180,7 +182,7 @@
                         <!-- /.col-md-6 -->
 
                         <div class="col-lg-6 col-lg-offset-1 col-md-6">
-                            <img src="assets/images/child.jpg" class="img-responsive scroll-reveal" alt="" />
+                            <img src="assets/images/about.jpg" class="img-responsive scroll-reveal" alt="" />
                             <p class="subtitle scroll-reveal">About ADUJ</p>
                             <p class="scroll-reveal">It is with immense pleasure that we introduce the first instalment of ADUJ, an annual cultural and literary fest organized by the National Law University and Judicial Academy, Assam. ADUJ 2017 will be a three day cultural and literary extravaganza that would strive to unfurl the splendorous talents from all around the country. Beyond the fun and festivities, every year ADUJ will serve as a catalyst for raising awareness about a particular social issue.
                                 <br>This year, to bring this idea into praxis, ADUJ’17 has chosen to give its platform to voices raising awareness for child rights. Many of the events in the fest will especially be focused on a particular aspect of rights of children, providing the participants with an opportunity to contribute to the cause through their talents. ADUJ strives to serve an additional purpose of promoting and exhibiting the enormously rich and diverse cultural heritage of The North East.</p>
@@ -346,6 +348,29 @@
 
 
 
+                <section id="gallery" style="margin-top: 100px; border-top: 1px solid #444; border-bottom: 1px solid #444; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="container scroll-reveal" style="text-align: right;">
+                        
+                        <div class="col-sm-8">
+                            <div class="fotorama" data-nav="thumbs" data-width="100%">
+  <img src="assets/images/event1.jpg">
+  <img src="assets/images/event2.jpg">
+  <img src="assets/images/child.jpg">
+  <img src="assets/images/bg.jpg">
+</div>
+                        </div>
+                        <div class="col-sm-4">
+                        <h2 class="scroll-reveal">Gallery</h2>
+                        <h3 style="text-transform: uppercase; margin-top: -30px; margin-bottom: 30px;"> A North Eastern journey</h3>
+                            <br><br>
+                        <a href="#" class="btn btn-home scroll-reveal">About North East</a>
+                        <br>
+                            </div>
+                    </div>
+                    
+                    
+                </section>
+                
 
 
 
@@ -355,16 +380,17 @@
 
                 <div class="staff">
 
-                    <h2 class="background-text scroll-reveal">Team</h2>
+                    <h2 class="background-text scroll-reveal" style="opacity: 0.1; z-index: 9999;">Team</h2>
 
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
 
                             <div class="staff-member">
-                                <img src="assets/images/staff1.jpg" class="img-responsive scroll-reveal" alt="" />
+                                <img src="assets/images/team.jpg" style="z-index: -999;" class="img-responsive scroll-reveal" alt="" />
                                 <div class="content scroll-reveal">
-                                    <h3>Naveen Shaji</h3>
-                                    <p class="subtitle">Chief Co-Ordinator</p>
+                                    <h3>The Driving Force</h3>
+                                    <p class="subtitle">Organizing TeamADUJ 2017</p>
+<!--
                                     <ul class="social list-inline list-unstyled">
                                         <li><a href="index.html#"><i class="fa fa-facebook"></i></a>
                                         </li>
@@ -373,24 +399,7 @@
                                         <li><a href="index.html#"><i class="fa fa-instagram"></i></a>
                                         </li>
                                     </ul>
-                                </div>
-                                <!-- /.content -->
-                            </div>
-                            <!-- /.staff-member -->
-
-                            <div class="staff-member">
-                                <img src="assets/images/staff3.jpg" class="img-responsive scroll-reveal" alt="" />
-                                <div class="content scroll-reveal">
-                                    <h3>Naveen Shaji</h3>
-                                    <p class="subtitle">Events &amp; Hospitality</p>
-                                    <ul class="social list-inline list-unstyled">
-                                        <li><a href="index.html#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+-->
                                 </div>
                                 <!-- /.content -->
                             </div>
@@ -399,128 +408,11 @@
                         </div>
                         <!-- /.col-sm-6 -->
 
-                        <div class="col-sm-6">
+                        
 
-                            <div class="staff-member">
-                                <img src="assets/images/staff2.jpg" class="img-responsive scroll-reveal" alt="" />
-                                <div class="content scroll-reveal">
-                                    <h3>Naveen Shaji</h3>
-                                    <p class="subtitle">Events &amp; Hospitality</p>
-                                    <ul class="social list-inline list-unstyled">
-                                        <li><a href="index.html#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.content -->
-                            </div>
-                            <!-- /.staff-member -->
+                        
 
-                            <div class="staff-member">
-                                <img src="assets/images/staff4.jpg" class="img-responsive scroll-reveal" alt="" />
-                                <div class="content scroll-reveal">
-                                    <h3>Naveen Shaji</h3>
-                                    <p class="subtitle">Events &amp; Hospitality</p>
-                                    <ul class="social list-inline list-unstyled">
-                                        <li><a href="index.html#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.content -->
-                            </div>
-                            <!-- /.staff-member -->
-
-                        </div>
-                        <!-- /.col-sm-6 -->
-
-                        <div class="col-sm-6">
-
-                            <div class="staff-member">
-                                <img src="assets/images/staff1.jpg" class="img-responsive scroll-reveal" alt="" />
-                                <div class="content scroll-reveal">
-                                    <h3>Naveen Shaji</h3>
-                                    <p class="subtitle">Events &amp; Hospitality</p>
-                                    <ul class="social list-inline list-unstyled">
-                                        <li><a href="index.html#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.content -->
-                            </div>
-                            <!-- /.staff-member -->
-
-                            <div class="staff-member">
-                                <img src="assets/images/staff3.jpg" class="img-responsive scroll-reveal" alt="" />
-                                <div class="content scroll-reveal">
-                                    <h3>Naveen Shaji</h3>
-                                    <p class="subtitle">Events &amp; Hospitality</p>
-                                    <ul class="social list-inline list-unstyled">
-                                        <li><a href="index.html#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.content -->
-                            </div>
-                            <!-- /.staff-member -->
-
-                        </div>
-                        <!-- /.col-sm-6 -->
-
-                        <div class="col-sm-6">
-
-                            <div class="staff-member">
-                                <img src="assets/images/staff2.jpg" class="img-responsive scroll-reveal" alt="" />
-                                <div class="content scroll-reveal">
-                                    <h3>Naveen Shaji</h3>
-                                    <p class="subtitle">Events &amp; Hospitality</p>
-                                    <ul class="social list-inline list-unstyled">
-                                        <li><a href="index.html#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.content -->
-                            </div>
-                            <!-- /.staff-member -->
-
-                            <div class="staff-member">
-                                <img src="assets/images/staff4.jpg" class="img-responsive scroll-reveal" alt="" />
-                                <div class="content scroll-reveal">
-                                    <h3>Naveen Shaji</h3>
-                                    <p class="subtitle">Events &amp; Hospitality</p>
-                                    <ul class="social list-inline list-unstyled">
-                                        <li><a href="index.html#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="index.html#"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.content -->
-                            </div>
-                            <!-- /.staff-member -->
-
-                        </div>
-                        <!-- /.col-sm-6 -->
+                        
 
                     </div>
                     <!-- /.row -->
@@ -573,11 +465,11 @@
         <section id="contact">
             <div class="container">
 
-                <h2 class="scroll-reveal">Experience the North East</h2>
+                <h2 class="scroll-reveal">Contact Us</h2>
 
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-5">
+                    <div class="col-lg-5 col-md-6">
 
                         <div class="contact-info scroll-reveal">
                             <p class="subtitle">Contact us</p>
@@ -611,9 +503,9 @@
                     </div>
                     <!-- /.col-md-5 -->
 
-                    <div class="col-lg-8 col-md-7">
+                    <div class="col-lg-7 col-md-6" style="overflow: hidden">
                         <!-- Map -->
-                        <!--                        <div id="map" class="scroll-reveal"></div>-->
+                                                <div id="map" class="scroll-reveal"></div>
                     </div>
 
                 </div>
@@ -665,6 +557,10 @@
     <script src="assets/vendor/slick/slick.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js"></script>
     <script src="assets/js/map.js"></script>
+    <!-- fotorama.css & fotorama.js. -->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
     <script src="assets/js/scripts.js"></script>
 
 </body>

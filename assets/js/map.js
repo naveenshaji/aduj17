@@ -2,8 +2,8 @@ google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(40.764226,-73.972036),
-            zoom: 15,
+            center: new google.maps.LatLng(26.1721,91.7558),
+            zoom: 12,
             zoomControl: false,
             disableDoubleClickZoom: false,
             mapTypeControl: false,
@@ -22,7 +22,7 @@ google.maps.event.addDomListener(window, 'load', init);
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['address', 'undefined', 'undefined', 'undefined', 'undefined', 40.7635371, -73.97224779999999, 'https://mapbuildr.com/assets/img/markers/ellipse-black.png']
+['address', 'undefined', 'undefined', 'undefined', 'undefined', 26.1721, 91.7558, 'https://mapbuildr.com/assets/img/markers/ellipse-black.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}

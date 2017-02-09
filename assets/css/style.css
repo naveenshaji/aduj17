@@ -378,10 +378,7 @@ a.next-event-top:hover {
 
 .intro-2 .content {
     position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 25vh;
 }
 
 .intro-2 h1 {
@@ -1109,4 +1106,15 @@ footer a:hover {
     #events h2 {
         font-size: 80px;
     }
+}
+
+.parallax-mirror {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.gallery-item img{
+    height: auto;
+    width: 100%;
 }

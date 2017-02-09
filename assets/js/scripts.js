@@ -70,3 +70,12 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 $('body').scrollspy({
   target: '#nav-1', offset:80
 });
+
+// ------------ Mouse Parallax --------
+$('#intro').mousemove(function(event){
+//    console.log(event.pageX);
+    $('#mouse-parallax').css('transform','translate('+-event.pageX/40+'px,'+-event.pageY/60+'px)');
+    $('.parallax-mirror').css('transform','translate('+(-$(window).width()/2+event.pageX)/20+'px,'+(-$(window).height()/2+event.pageY)/20+'px) scale(1.2)');
+//    $('.parallax-mirror').css('',(-$(window).width()/2+event.pageX)/40+'px');
+})
+
